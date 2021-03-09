@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/txt_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblTimer"
+        android:textAlignment="center"
+        android:textSize="50sp"/>
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="0.9"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp">
+         <Button
+             android:id="@+id/bnt_lap_reset"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:background="@drawable/rounded_rect_lap"
+             android:text="@string/btnLap"
+             android:textColor="@color/colorWhite" />
+         <Button
+             android:id="@+id/btn_start_pause"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentRight="true"
+             android:background="@drawable/rounded_rect_stop"
+             android:text="@string/lblStart"
+             android:textColor="@color/colorWhite" />
+         <ListView
+             android:id="@+id/lv_laps"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/btn_start_pause">
+         </ListView>
+    </RelativeLayout>
+</LinearLayout>

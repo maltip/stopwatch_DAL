@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Puri_Malti_StopWatch</string>
+    <string name="btnLap">LAP</string>
+    <string name="lblPause">Pause</string>
+    <string name="lblStart">Start</string>
+    <string name="lblReset">Reset</string>
+    <string name="lblTimer">0:00:000</string>
+</resources>
